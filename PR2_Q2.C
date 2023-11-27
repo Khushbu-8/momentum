@@ -3,10 +3,10 @@
 
 void main(){
 
-double  unit,amount,total,surcharge;
+float  unit,amount,total,surcharge;
 	clrscr();
 	printf("Enter electricity units..");
-	scanf("%lf",&unit);
+	scanf("%f",&unit);
 
 	if(unit<=50){
 	unit=amount*0.50;
@@ -25,7 +25,7 @@ double  unit,amount,total,surcharge;
        }
        surcharge=amount*20/100;
        total=surcharge+amount;
-	 printf("Electricity Bill is %lf",total);
+	 printf("Electricity Bill is %f",total);
 
 getch();
 }
